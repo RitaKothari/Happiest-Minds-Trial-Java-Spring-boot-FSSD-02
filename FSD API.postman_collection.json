@@ -1,0 +1,3538 @@
+{
+	"info": {
+		"_postman_id": "ac4232cd-0f5f-4ee4-9107-35d1325e39ed",
+		"name": "FSD API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23914326"
+	},
+	"item": [
+		{
+			"name": "addEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Rahul r\",\r\n    \"department\":\"Sales\",\r\n    \"hireDate\":\"2022-09-20\",\r\n    \"age\":40,\r\n    \"sex\":\"Male\",\r\n    \"city\":\"Chennai\",\r\n    \"phone\":\"+91-12345567890\",\r\n    \"email\":\"Rahulr@email.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/addEmployee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addEmployee"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addEmployee",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"name\": \"Ram\",\r\n    \"department\":\"Web&Programming\",\r\n    \"hireDate\":\"2022-09-19\",\r\n    \"age\":28,\r\n    \"sex\":\"Male\",\r\n    \"city\":\"Bangalore\",\r\n    \"phone\":\"+91-12345567890\",\r\n    \"email\":\"ram@nuvepro.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/addEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addEmployee"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Status",
+							"value": "Success"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Dec 2022 11:48:37 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"Employee added successfully\",\n    \"status\": \"Success\",\n    \"employeeIdId\": 3\n}"
+				},
+				{
+					"name": "addEmployee",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"name\": \"Ram\",\r\n    \"department\":\"Web&Programming\",\r\n    \"hireDate\":\"2022-09-19\",\r\n    \"age\":28,\r\n    \"sex\":\"Male\",\r\n    \"city\":\"Bangalore\",\r\n    \"phone\":\"+91-12345567890\",\r\n    \"email\":\"ram@nuvepro.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/addEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addEmployee"
+							]
+						}
+					},
+					"status": "Accepted",
+					"code": 202,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Dec 2022 11:54:50 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"Employee already exists\",\n    \"status\": \"Request Rejected\",\n    \"employeeIdId\": 3\n}"
+				},
+				{
+					"name": "addEmployee",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 5,\r\n    \"name\": \"John\",\r\n    \"department\":\"Analyst\",\r\n    \"hireDate\":\"2022-07-20\",\r\n    \"age\":40,\r\n    \"sex\":\"Male\",\r\n    \"city\":\"Srinagar\",\r\n    \"phone\":\"+91-12345567890\",\r\n    \"email\":\"john@email.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/addEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addEmployee"
+							]
+						}
+					},
+					"status": "Accepted",
+					"code": 202,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jan 2023 07:41:32 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseMessage\": \"Employee already exists\",\n    \"status\": \"Request Rejected\",\n    \"employeeIdId\": 5\n}"
+				}
+			]
+		},
+		{
+			"name": "getEmployeeById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getEmployeeById",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/-1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"-1"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "19"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Dec 2022 11:47:58 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Invalid Id Provided"
+				},
+				{
+					"name": "getEmployeeById",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"1"
+							]
+						}
+					},
+					"status": "Accepted",
+					"code": 202,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Dec 2022 11:55:21 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Sam\",\n    \"department\": \"Web&Programming\",\n    \"hireDate\": \"2022-09-19T00:00:00.000+00:00\",\n    \"age\": 28,\n    \"sex\": \"Male\",\n    \"city\": \"Bangalore\",\n    \"phone\": \"+91-12345567890\",\n    \"email\": \"sam@email.com\"\n}"
+				}
+			]
+		},
+		{
+			"name": "getEmployeeByDepartment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/department?departmentName=Web%26Programming",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"department"
+					],
+					"query": [
+						{
+							"key": "departmentName",
+							"value": "Web&Programming"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getEmployeeByDepartment",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/department?departmentName=Web%26Programming",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"department"
+							],
+							"query": [
+								{
+									"key": "departmentName",
+									"value": "Web&Programming"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 22 Dec 2022 11:37:37 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Rita\",\n        \"department\": \"Web&Programming\",\n        \"hireDate\": \"2022-05-10T00:00:00.000+00:00\",\n        \"age\": 29,\n        \"sex\": \"Female\",\n        \"city\": \"Rajkot\",\n        \"phone\": \"+91-81449943679\",\n        \"email\": \"rita@nuvepro.com\"\n    }\n]"
+				},
+				{
+					"name": "getEmployeeByDepartment",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/department?departmentName=Sale",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"department"
+							],
+							"query": [
+								{
+									"key": "departmentName",
+									"value": "Sale"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "57"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Dec 2022 11:56:23 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Failed to find matching employee for the department: Sale"
+				}
+			]
+		},
+		{
+			"name": "getEmployeeByName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/name?name=rita&exactMatch=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"name"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "rita"
+						},
+						{
+							"key": "exactMatch",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getEmployeeByName",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/name?name=Sam&exactMatch=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"name"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Sam"
+								},
+								{
+									"key": "exactMatch",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Dec 2022 11:58:32 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Sam\",\n        \"department\": \"Web&Programming\",\n        \"hireDate\": \"2022-09-19T00:00:00.000+00:00\",\n        \"age\": 28,\n        \"sex\": \"Male\",\n        \"city\": \"Bangalore\",\n        \"phone\": \"+91-12345567890\",\n        \"email\": \"sam@email.com\"\n    }\n]"
+				},
+				{
+					"name": "getEmployeeByName",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/name?name=sam&exactMatch=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"name"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "sam"
+								},
+								{
+									"key": "exactMatch",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "48"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Dec 2022 12:00:22 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Failed to get employee records for the name: sam"
+				},
+				{
+					"name": "getEmployeeByName",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/name?name=Sam&exactMatch=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"name"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Sam"
+								},
+								{
+									"key": "exactMatch",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Dec 2022 12:01:33 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Sam\",\n        \"department\": \"Web&Programming\",\n        \"hireDate\": \"2022-09-19T00:00:00.000+00:00\",\n        \"age\": 28,\n        \"sex\": \"Male\",\n        \"city\": \"Bangalore\",\n        \"phone\": \"+91-12345567890\",\n        \"email\": \"sam@email.com\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "getEmployeeCountByName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/employeeCountByName?name=Rahul r",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"employeeCountByName"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Rahul r"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getEmployeeCountByName",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/employeeCountByName?name=prajwal&exactMatch=false",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"employeeCountByName"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "prajwal"
+								},
+								{
+									"key": "exactMatch",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "34"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Dec 2022 12:02:06 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "No employee found for name prajwal"
+				},
+				{
+					"name": "getEmployeeCountByName",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/employeeCountByName?name=Rahul&exactMatch=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"employeeCountByName"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Rahul"
+								},
+								{
+									"key": "exactMatch",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 30 Dec 2022 04:18:57 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Total count of employee for name Rahul : 1"
+				},
+				{
+					"name": "getEmployeeCountByName",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/employeeCountByName?name=rahul&exactMatch=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"employeeCountByName"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "rahul"
+								},
+								{
+									"key": "exactMatch",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "32"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 30 Dec 2022 04:19:56 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "No employee found for name rahul"
+				},
+				{
+					"name": "getEmployeeCountByName",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/employeeCountByName?name=rahul&exactMatch=false",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"employeeCountByName"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "rahul"
+								},
+								{
+									"key": "exactMatch",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 30 Dec 2022 04:20:53 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Total count of employee for name rahul : 1"
+				}
+			]
+		},
+		{
+			"name": "getTotalEmployeeCount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/employeeCount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"employeeCount"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getLabTotalEmployeeCount",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/employeeCount",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"employeeCount"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "22"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 23 Dec 2022 05:33:10 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Total count of labs: 2"
+				}
+			]
+		},
+		{
+			"name": "getEmployeeCountByDepartment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/employeeCountByDepartment?department=Web%26Programming",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"employeeCountByDepartment"
+					],
+					"query": [
+						{
+							"key": "department",
+							"value": "Web&Programming"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getEmployeeCountByDepartment",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/employeeCount?department=Web%26Programming",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"employeeCount"
+							],
+							"query": [
+								{
+									"key": "department",
+									"value": "Web%26Programming"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "26"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Dec 2022 07:34:15 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Total count of employee: 2"
+				},
+				{
+					"name": "getEmployeeCountByDepartment",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/employeeCount?department=testng",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"employeeCount"
+							],
+							"query": [
+								{
+									"key": "department",
+									"value": "testng"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "26"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 30 Dec 2022 04:22:50 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Total count of employee: 4"
+				}
+			]
+		},
+		{
+			"name": "getEmployeeCountByCity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/employeeCountByCity?city=rajkot&exactMatch=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"employeeCountByCity"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "rajkot"
+						},
+						{
+							"key": "exactMatch",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getEmployeeCountByCity",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/employeeCount?city=Rajkot&exactMatch=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"employeeCount"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "Rajkot"
+								},
+								{
+									"key": "exactMatch",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "26"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Dec 2022 07:54:35 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Total count of employee: 2"
+				},
+				{
+					"name": "getEmployeeCountByCity",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/employeeCountByCity?city=rajkot&exactMatch=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"employeeCountByCity"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "rajkot"
+								},
+								{
+									"key": "exactMatch",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "33"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Dec 2022 09:23:09 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "No employee found for city rajkot"
+				},
+				{
+					"name": "getEmployeeCountByCity",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/employeeCountByCity?city=rajkot&exactMatch=false",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"employeeCountByCity"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "rajkot"
+								},
+								{
+									"key": "exactMatch",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "43"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Dec 2022 09:23:46 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Total count of employee for city rajkot : 1"
+				}
+			]
+		},
+		{
+			"name": "getEmployeeByCity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/city?city=rajkot&exactMatch=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"city"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "rajkot"
+						},
+						{
+							"key": "exactMatch",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getEmployeeByCity",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/city?city=rajkot&exactMatch=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"city"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "rajkot"
+								},
+								{
+									"key": "exactMatch",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Dec 2022 07:28:52 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "getEmployeeByCity",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/city?city=Rajkot&exactMatch=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"city"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "Rajkot"
+								},
+								{
+									"key": "exactMatch",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Dec 2022 07:29:54 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Rita Kothari\",\n        \"department\": \"Web&Programming\",\n        \"hireDate\": \"2022-05-10T00:00:00.000+00:00\",\n        \"age\": 29,\n        \"sex\": \"Female\",\n        \"city\": \"Rajkot\",\n        \"phone\": \"+91-81449943679\",\n        \"email\": \"rita@nuvepro.com\"\n    }\n]"
+				},
+				{
+					"name": "getEmployeeByCity",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/city?city=rajkot&exactMatch=false",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"city"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "rajkot"
+								},
+								{
+									"key": "exactMatch",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Dec 2022 07:30:41 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Rita Kothari\",\n        \"department\": \"Web&Programming\",\n        \"hireDate\": \"2022-05-10T00:00:00.000+00:00\",\n        \"age\": 29,\n        \"sex\": \"Female\",\n        \"city\": \"Rajkot\",\n        \"phone\": \"+91-81449943679\",\n        \"email\": \"rita@nuvepro.com\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "updateEmployeeById",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Sam\",\r\n    \"department\":\"Web&Programming\",\r\n    \"hireDate\":\"2022-09-19\",\r\n    \"age\":28,\r\n    \"sex\":\"Male\",\r\n    \"city\":\"Bangalore\",\r\n    \"phone\":\"+91-12345567890\",\r\n    \"email\":\"sam@email.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/employees/updateById/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"updateById",
+						"6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "updateEmployeeById",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sam\",\r\n    \"department\":\"Web&Programming\",\r\n    \"hireDate\":\"2022-09-19\",\r\n    \"age\":28,\r\n    \"sex\":\"Male\",\r\n    \"city\":\"Bangalore\",\r\n    \"phone\":\"+91-12345567890\",\r\n    \"email\":\"sam@email.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees/updateById/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"updateById",
+								"6"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Dec 2022 09:29:34 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"employeeId\": 6,\n    \"response_message\": \"Employee details not found for the Employee id: 6\"\n}"
+				},
+				{
+					"name": "updateEmployeeById",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sam\",\r\n    \"department\":\"Web&Programming\",\r\n    \"hireDate\":\"2022-09-19\",\r\n    \"age\":28,\r\n    \"sex\":\"Male\",\r\n    \"city\":\"Chennai\",\r\n    \"phone\":\"+91-12345567890\",\r\n    \"email\":\"sam@email.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees/updateById/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"updateById",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Status",
+							"value": "Success"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 30 Dec 2022 04:28:00 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"employeeId\": 1,\n    \"response_message\": \"Employee details updated successfully.\"\n}"
+				},
+				{
+					"name": "updateEmployeeById",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sam\",\r\n    \"department\":\"Web&Programming\",\r\n    \"hireDate\":\"2022-09-19\",\r\n    \"age\":28,\r\n    \"sex\":\"Male\",\r\n    \"city\":\"Chennai\",\r\n    \"phone\":\"+91-12345567890\",\r\n    \"email\":\"sam@email.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees/updateById/-1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"updateById",
+								"-1"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "19"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 30 Dec 2022 04:31:11 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Invalid Id Provided"
+				}
+			]
+		},
+		{
+			"name": "DeleteEmployeeById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/deleteEmployeeById/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"deleteEmployeeById",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DeleteEmployeeById",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/deleteEmployeeById/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"deleteEmployeeById",
+								"5"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 30 Dec 2022 04:31:48 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"employeeId\": 5,\n    \"response_message\": \"Employee does not exists\"\n}"
+				},
+				{
+					"name": "DeleteEmployeeById",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/deleteEmployeeById/-5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"deleteEmployeeById",
+								"-5"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "19"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 30 Dec 2022 04:32:02 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Invalid Id Provided"
+				},
+				{
+					"name": "DeleteEmployeeById",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/deleteEmployeeById/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"deleteEmployeeById",
+								"4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Status",
+							"value": "Success"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 30 Dec 2022 04:32:20 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"employeeId\": 4,\n    \"response_message\": \"Employee deleted Successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "updateEmployeeByName",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"lokesh\",\r\n    \"department\":\"Sales and marketing\",\r\n    \"hireDate\":\"2022-09-19\",\r\n    \"age\":30,\r\n    \"sex\":\"Male\",\r\n    \"city\":\"Bangalore\",\r\n    \"phone\":\"+91-12345567890\",\r\n    \"email\":\"lokesh@email.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/employees/updateByName?name=lokesh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"updateByName"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "lokesh"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "updateEmployeeByName",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Prajwal\",\r\n    \"department\":\"Sales\",\r\n    \"hireDate\":\"2022-09-19\",\r\n    \"age\":30,\r\n    \"sex\":\"Male\",\r\n    \"city\":\"Bangalore\",\r\n    \"phone\":\"+91-12345567890\",\r\n    \"email\":\"prajwal@email.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees/updateByName?name=Prajwal",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"updateByName"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Prajwal"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "48"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 30 Dec 2022 04:32:37 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Employee details not found for the name: Prajwal"
+				},
+				{
+					"name": "updateEmployeeByName",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Prajwal\",\r\n    \"department\":\"Sales\",\r\n    \"hireDate\":\"2022-09-19\",\r\n    \"age\":30,\r\n    \"sex\":\"Male\",\r\n    \"city\":\"Bangalore\",\r\n    \"phone\":\"+91-12345567890\",\r\n    \"email\":\"prajwal@email.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees/updateByName?name=Robby",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"updateByName"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Robby"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Status",
+							"value": "Success"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 30 Dec 2022 04:35:13 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"employeeId\": 1,\n    \"response_message\": \"Updated Employee Details Successfully of name:Robby\"\n}"
+				},
+				{
+					"name": "updateEmployeeByName",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Prajwal\",\r\n    \"department\":\"Sales\",\r\n    \"hireDate\":\"2022-09-19\",\r\n    \"age\":30,\r\n    \"sex\":\"Male\",\r\n    \"city\":\"Bangalore\",\r\n    \"phone\":\"+91-12345567890\",\r\n    \"email\":\"prajwal@email.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees/updateByName?name=prajwal",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"updateByName"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "prajwal"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "48"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 30 Dec 2022 04:36:17 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Employee details not found for the name: prajwal"
+				}
+			]
+		},
+		{
+			"name": "deleteEmployeeByName",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/deleteEmployeeByName?name=Ram",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"deleteEmployeeByName"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Ram"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "deleteEmployeeByName",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/deleteEmployeeByName?name=Ram",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"deleteEmployeeByName"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Ram"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Status",
+							"value": "Success"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 30 Dec 2022 04:37:11 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"employeeId\": 3,\n    \"response_message\": \"Employee deleted Successfully\"\n}"
+				},
+				{
+					"name": "deleteEmployeeByName",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/deleteEmployeeByName?name=Sam",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"deleteEmployeeByName"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Sam"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Status",
+							"value": "Success"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 30 Dec 2022 04:38:22 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"employeeId\": 1,\n    \"response_message\": \"Employee deleted Successfully\"\n}"
+				},
+				{
+					"name": "deleteEmployeeByName",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/deleteEmployeeByName?name=kobby",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"deleteEmployeeByName"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "kobby"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 30 Dec 2022 04:43:46 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Employee does not exists with name : kobby"
+				}
+			]
+		},
+		{
+			"name": "getEmployeeByHireDate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"startDate\":\"2022-09-18\",\r\n  \"condition\":\"between\",\r\n  \"endDate\":\"2022-09-20\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/employees/employeeByHireDate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"employeeByHireDate"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getEmployeeByHireDate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"startDate\":\"2022-09-19\",\r\n  \"condition\":\"greater than equal\",\r\n  \"endDate\":\"\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees/employeeByHireDate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"employeeByHireDate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jan 2023 07:13:45 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Lakshmi\",\n        \"department\": \"Testing\",\n        \"hireDate\": \"2022-09-20T00:00:00.000+00:00\",\n        \"age\": 22,\n        \"sex\": \"Female\",\n        \"city\": \"Chennai\",\n        \"phone\": \"+91-12345567890\",\n        \"email\": \"lakshmi@email.com\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Ram\",\n        \"department\": \"Testing\",\n        \"hireDate\": \"2022-09-20T00:00:00.000+00:00\",\n        \"age\": 22,\n        \"sex\": \"Male\",\n        \"city\": \"Chennai\",\n        \"phone\": \"+91-12345567890\",\n        \"email\": \"ram@email.com\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Sam\",\n        \"department\": \"Web&Programming\",\n        \"hireDate\": \"2022-09-19T00:00:00.000+00:00\",\n        \"age\": 22,\n        \"sex\": \"Male\",\n        \"city\": \"Chennai\",\n        \"phone\": \"+91-12345567890\",\n        \"email\": \"sam@email.com\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"John\",\n        \"department\": \"Web&Programming\",\n        \"hireDate\": \"2022-09-19T00:00:00.000+00:00\",\n        \"age\": 28,\n        \"sex\": \"Male\",\n        \"city\": \"Bangalore\",\n        \"phone\": \"+91-12345567890\",\n        \"email\": \"john@email.com\"\n    }\n]"
+				},
+				{
+					"name": "getEmployeeByHireDate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"startDate\":\"2022-09-19\",\r\n  \"condition\":\"greater than\",\r\n  \"endDate\":\"\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees/employeeByHireDate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"employeeByHireDate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jan 2023 07:16:50 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Lakshmi\",\n        \"department\": \"Testing\",\n        \"hireDate\": \"2022-09-20T00:00:00.000+00:00\",\n        \"age\": 30,\n        \"sex\": \"Female\",\n        \"city\": \"Bangalore\",\n        \"phone\": \"+91-12345567890\",\n        \"email\": \"lakshmi@email.com\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Ram\",\n        \"department\": \"Testing\",\n        \"hireDate\": \"2022-09-20T00:00:00.000+00:00\",\n        \"age\": 22,\n        \"sex\": \"Male\",\n        \"city\": \"Chennai\",\n        \"phone\": \"+91-12345567890\",\n        \"email\": \"ram@email.com\"\n    }\n]"
+				},
+				{
+					"name": "getEmployeeByHireDate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"startDate\":\"2022-01-01\",\r\n  \"condition\":\"less than\",\r\n  \"endDate\":\"\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees/employeeByHireDate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"employeeByHireDate"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "66"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jan 2023 07:17:23 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "No Records were found for HireDate less than 2022-01-01 05:30:00.0"
+				},
+				{
+					"name": "getEmployeeByHireDate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"startDate\":\"2022-09-19\",\r\n  \"condition\":\"less than\",\r\n  \"endDate\":\"\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees/employeeByHireDate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"employeeByHireDate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jan 2023 07:17:42 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 5,\n        \"name\": \"Pintu\",\n        \"department\": \"Marketting\",\n        \"hireDate\": \"2022-05-14T00:00:00.000+00:00\",\n        \"age\": 22,\n        \"sex\": \"Male\",\n        \"city\": \"Chennai\",\n        \"phone\": \"+91-12345567890\",\n        \"email\": \"pintu@email.com\"\n    }\n]"
+				},
+				{
+					"name": "getEmployeeByHireDate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"startDate\":\"2022-09-19\",\r\n  \"condition\":\"less than equal\",\r\n  \"endDate\":\"\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees/employeeByHireDate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"employeeByHireDate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jan 2023 07:18:02 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 3,\n        \"name\": \"Sam\",\n        \"department\": \"Web&Programming\",\n        \"hireDate\": \"2022-09-19T00:00:00.000+00:00\",\n        \"age\": 22,\n        \"sex\": \"Male\",\n        \"city\": \"Chennai\",\n        \"phone\": \"+91-12345567890\",\n        \"email\": \"sam@email.com\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"John\",\n        \"department\": \"Web&Programming\",\n        \"hireDate\": \"2022-09-19T00:00:00.000+00:00\",\n        \"age\": 28,\n        \"sex\": \"Male\",\n        \"city\": \"Bangalore\",\n        \"phone\": \"+91-12345567890\",\n        \"email\": \"john@email.com\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Pintu\",\n        \"department\": \"Marketting\",\n        \"hireDate\": \"2022-05-14T00:00:00.000+00:00\",\n        \"age\": 22,\n        \"sex\": \"Male\",\n        \"city\": \"Chennai\",\n        \"phone\": \"+91-12345567890\",\n        \"email\": \"pintu@email.com\"\n    }\n]"
+				},
+				{
+					"name": "getEmployeeByHireDate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"startDate\":\"2022-09-19\",\r\n  \"condition\":\"between\",\r\n  \"endDate\":\"2022-09-20\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees/employeeByHireDate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"employeeByHireDate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jan 2023 07:18:27 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Lakshmi\",\n        \"department\": \"Testing\",\n        \"hireDate\": \"2022-09-20T00:00:00.000+00:00\",\n        \"age\": 30,\n        \"sex\": \"Female\",\n        \"city\": \"Bangalore\",\n        \"phone\": \"+91-12345567890\",\n        \"email\": \"lakshmi@email.com\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Ram\",\n        \"department\": \"Testing\",\n        \"hireDate\": \"2022-09-20T00:00:00.000+00:00\",\n        \"age\": 22,\n        \"sex\": \"Male\",\n        \"city\": \"Chennai\",\n        \"phone\": \"+91-12345567890\",\n        \"email\": \"ram@email.com\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Sam\",\n        \"department\": \"Web&Programming\",\n        \"hireDate\": \"2022-09-19T00:00:00.000+00:00\",\n        \"age\": 22,\n        \"sex\": \"Male\",\n        \"city\": \"Chennai\",\n        \"phone\": \"+91-12345567890\",\n        \"email\": \"sam@email.com\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"John\",\n        \"department\": \"Web&Programming\",\n        \"hireDate\": \"2022-09-19T00:00:00.000+00:00\",\n        \"age\": 28,\n        \"sex\": \"Male\",\n        \"city\": \"Bangalore\",\n        \"phone\": \"+91-12345567890\",\n        \"email\": \"john@email.com\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "countEmployeeByHireDate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"startDate\":\"2022-09-19\",\r\n  \"condition\":\"between\",\r\n  \"endDate\":\"2022-09-20\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/employees/countEmployeeByHireDate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"countEmployeeByHireDate"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "countEmployeeByHireDate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"startDate\":\"2022-09-19\",\r\n  \"condition\":\"equals\",\r\n  \"endDate\":\"\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees/countEmployeeByHireDate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"countEmployeeByHireDate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "73"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jan 2023 07:09:24 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Count for the Hiredate :2022-09-19 05:30:00.0 and condition : equals is 2"
+				},
+				{
+					"name": "countEmployeeByHireDate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"startDate\":\"2022-09-19\",\r\n  \"condition\":\"less than\",\r\n  \"endDate\":\"\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees/countEmployeeByHireDate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"countEmployeeByHireDate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "76"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jan 2023 07:09:54 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Count for the Hiredate :2022-09-19 05:30:00.0 and condition : less than is 1"
+				},
+				{
+					"name": "countEmployeeByHireDate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"startDate\":\"2022-09-19\",\r\n  \"condition\":\"less than equal\",\r\n  \"endDate\":\"\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees/countEmployeeByHireDate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"countEmployeeByHireDate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "82"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jan 2023 07:10:20 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Count for the Hiredate :2022-09-19 05:30:00.0 and condition : less than equal is 3"
+				},
+				{
+					"name": "countEmployeeByHireDate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"startDate\":\"2022-09-19\",\r\n  \"condition\":\"greater than\",\r\n  \"endDate\":\"\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees/countEmployeeByHireDate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"countEmployeeByHireDate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "79"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jan 2023 07:11:45 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Count for the Hiredate :2022-09-19 05:30:00.0 and condition : greater than is 2"
+				},
+				{
+					"name": "countEmployeeByHireDate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"startDate\":\"2022-09-19\",\r\n  \"condition\":\"greater than equal\",\r\n  \"endDate\":\"\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees/countEmployeeByHireDate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"countEmployeeByHireDate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "85"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jan 2023 07:11:59 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Count for the Hiredate :2022-09-19 05:30:00.0 and condition : greater than equal is 4"
+				},
+				{
+					"name": "countEmployeeByHireDate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"startDate\":\"2022-09-19\",\r\n  \"condition\":\"between\",\r\n  \"endDate\":\"2022-09-20\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees/countEmployeeByHireDate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"countEmployeeByHireDate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "74"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jan 2023 07:12:27 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Count for the Hiredate :2022-09-19 05:30:00.0 and condition : between is 4"
+				},
+				{
+					"name": "countEmployeeByHireDate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"startDate\":\"2022-09-21\",\r\n  \"condition\":\"between\",\r\n  \"endDate\":\"2022-11-28\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employees/countEmployeeByHireDate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"countEmployeeByHireDate"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "74"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jan 2023 07:13:14 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Count for the Hiredate :2022-09-21 05:30:00.0 and condition : between is 0"
+				}
+			]
+		},
+		{
+			"name": "getAllEmployees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/getAllEmployees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"getAllEmployees"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getAllEmployees",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employees/getAllEmployees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employees",
+								"getAllEmployees"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 02 Jan 2023 10:05:28 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Sam\",\n        \"department\": \"Web&Programming\",\n        \"hireDate\": \"2022-05-23T00:00:00.000+00:00\",\n        \"age\": 28,\n        \"sex\": \"Male\",\n        \"city\": \"Bangalore\",\n        \"phone\": \"+91-12345567890\",\n        \"email\": \"sam@email.com\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Prajwal\",\n        \"department\": \"Analyst\",\n        \"hireDate\": \"2022-09-19T00:00:00.000+00:00\",\n        \"age\": 30,\n        \"sex\": \"Male\",\n        \"city\": \"Bangalore\",\n        \"phone\": \"+91-12345567890\",\n        \"email\": \"prajwal@email.com\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Ram\",\n        \"department\": \"Web&Programming\",\n        \"hireDate\": \"2022-09-19T00:00:00.000+00:00\",\n        \"age\": 28,\n        \"sex\": \"Male\",\n        \"city\": \"Bangalore\",\n        \"phone\": \"+91-12345567890\",\n        \"email\": \"ram@nuvepro.com\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Rocky\",\n        \"department\": \"Testing\",\n        \"hireDate\": \"2022-09-19T00:00:00.000+00:00\",\n        \"age\": 30,\n        \"sex\": \"Male\",\n        \"city\": \"Mumbai\",\n        \"phone\": \"+91-12345567890\",\n        \"email\": \"rocky@nuvepro.com\"\n    }\n]"
+				}
+			]
+		}
+	]
+}

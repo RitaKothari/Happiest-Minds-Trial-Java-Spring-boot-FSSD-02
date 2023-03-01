@@ -1,0 +1,294 @@
+{
+	"info": {
+		"_postman_id": "a7b47185-006b-48d0-866f-7c2114f4e9f9",
+		"name": "Java-SprintBoot-DemoAPIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10528787"
+	},
+	"item": [
+		{
+			"name": "SpringBootRestService",
+			"item": [
+				{
+					"name": "getVisitorDetails",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/visitors?name=Rishi Ravi",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"visitors"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Rishi Ravi"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addLab",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"var labId = postman.getEnvironmentVariable(\"labId\");\r",
+									"postman.setEnvironmentVariable(\"labId\", parseInt(labId) +1);\r",
+									"console.log( parseInt(labId)+1)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": {{labId}},\r\n    \"name\": \"GCP Cloud Practitioner\",\r\n    \"customer\": \"Fractel\",\r\n    \"type\": \"Account\",\r\n    \"category\": \"Playground\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/addLab",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addLab"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addDeleteLabId",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"var labId = postman.getEnvironmentVariable(\"labId\");\r",
+									"postman.setEnvironmentVariable(\"labId\", parseInt(labId) +1);\r",
+									"console.log( parseInt(labId)+1)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": {{labIdToDelete}},\r\n    \"name\": \"GCP Cloud Practitioner\",\r\n    \"customer\": \"Upgrad\",\r\n    \"type\": \"Account\",\r\n    \"category\": \"Playground\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/addLab",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addLab"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getLabById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/labs/{{labId}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"labs",
+								"{{labId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllLabDetails",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/labs/allLabs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"labs",
+								"allLabs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getLabByCustomerName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/labs/client?clientName=TCS",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"labs",
+								"client"
+							],
+							"query": [
+								{
+									"key": "clientName",
+									"value": "TCS"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getLabByLabName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/labs/lab?labName=GCP Cloud Practitioner",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"labs",
+								"lab"
+							],
+							"query": [
+								{
+									"key": "labName",
+									"value": "GCP Cloud Practitioner"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getLabTotalLabCount",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/labs/labCount",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"labs",
+								"labCount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateLabDetails",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"GCP-Cloud-Practitioner\",\r\n    \"customer\": \"Great Learning\",\r\n    \"type\": \"Account\",\r\n    \"category\": \"Project\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/labs/updateLab/{{labIdToUpdate}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"labs",
+								"updateLab",
+								"{{labIdToUpdate}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteLabDetails",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/labs/deleteLab/{{labIdToDelete}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"labs",
+								"deleteLab",
+								"{{labIdToDelete}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
