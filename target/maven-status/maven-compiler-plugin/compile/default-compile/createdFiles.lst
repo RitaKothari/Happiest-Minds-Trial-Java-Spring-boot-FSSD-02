@@ -8,4 +8,6 @@ org\nuvepro\demo\service\EmployeeService.class
 org\nuvepro\demo\controller\EmployeeEntity.class
 org\nuvepro\demo\controller\UpdateEmployeebyidResponse.class
 org\nuvepro\demo\service\CORSFilter.class
+org\nuvepro\demo\controller\UserAuthenticatationResponse.class
+org\nuvepro\demo\controller\UserAuthentication.class
 org\nuvepro\demo\controller\EmployeeResponse.class

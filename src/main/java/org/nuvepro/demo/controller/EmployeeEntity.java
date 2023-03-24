@@ -1,5 +1,6 @@
 package org.nuvepro.demo.controller;
 
+
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 

@@ -17,4 +17,8 @@ public class EmployeeService {
         return repo.findById(employeeId).isPresent();
     }
 
+//    public boolean checkIfEmployeeExistsforemail(String Emailid){
+//
+//        return repo.findByEmailEquals(Emailid).getEmail();
+//    }
 }
